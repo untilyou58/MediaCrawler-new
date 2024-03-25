@@ -98,7 +98,7 @@
 有任何问题可以进群交流。
 **二维码会不定期更新，如果过期请先star该repo，过几天再来看下。**
 
-<img src="img/fuye.png" width = "200" />
+<img src="img/1978fc107144083bf6c04fa577e07611.jpeg" width = "200" />
 
 # Star History
 
