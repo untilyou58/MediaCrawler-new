@@ -99,3 +99,9 @@
 **二维码会不定期更新，如果过期请先star该repo，过几天再来看下。**
 
 <img src="img/fuye.png" width = "200" />
+
+# Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jiji262/MediaCrawler-new&type=Date)](https://star-history.com/#jiji262/MediaCrawler-new&Date)
+
+
