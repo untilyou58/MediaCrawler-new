@@ -68,7 +68,7 @@ class Application(tornado.web.Application):
             autoescape=None,
             autoreload=True
         )
-        super(Application, self).__init__(handlers, **settings)
+        super(Application, self).__init__(handlers, **settings)  # type: ignore
 
 
 async def main():

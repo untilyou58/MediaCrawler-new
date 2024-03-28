@@ -65,7 +65,7 @@ class RedisDbIpCache:
         :return:
         """
         all_ip_list: List[IpInfoModel] = []
-        all_ip_keys: List[str] = self.redis_client.keys(pattern=f"{proxy_brand_name}_*")
+        all_ip_keys: List[str] = self.redis_client.keys(pattern=f"{proxy_brand_name}_*")  # type: ignore
         try:
             for ip_key in all_ip_keys:
                 ip_value = self.redis_client.get(ip_key)
@@ -120,20 +120,20 @@ class JiSuHttpProxy(ProxyProvider):
                 "User-Agent": "MediaCrawler https://github.com/NanmiCoder/MediaCrawler"})
             res_dict: Dict = response.json()
             if res_dict.get("code") == 0:
-                data: List[Dict] = res_dict.get("data")
+                data: List[Dict] = res_dict.get("data")  # type: ignore
                 current_ts = utils.get_unix_timestamp()
                 for ip_item in data:
                     ip_info_model = IpInfoModel(
-                        ip=ip_item.get("ip"),
-                        port=ip_item.get("port"),
-                        user=ip_item.get("user"),
-                        password=ip_item.get("pass"),
+                        ip=ip_item.get("ip"),  # type: ignore
+                        port=ip_item.get("port"),  # type: ignore
+                        user=ip_item.get("user"),  # type: ignore
+                        password=ip_item.get("pass"),  # type: ignore
                         expired_time_ts=utils.get_unix_time_from_time_str(ip_item.get("expire"))
                     )
                     ip_key = f"JISUHTTP_{ip_info_model.ip}_{ip_info_model.port}_{ip_info_model.user}_{ip_info_model.password}"
                     ip_value = ip_info_model.model_dump_json()
                     ip_infos.append(ip_info_model)
-                    self.ip_cache.set_ip(ip_key, ip_value, ex=ip_info_model.expired_time_ts - current_ts)
+                    self.ip_cache.set_ip(ip_key, ip_value, ex=ip_info_model.expired_time_ts - current_ts)  # type: ignore
             else:
                 raise IpGetError(res_dict.get("msg", "unkown err"))
         return ip_cache_list + ip_infos

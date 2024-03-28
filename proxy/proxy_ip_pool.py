@@ -41,7 +41,7 @@ class ProxyIpPool:
             httpx_proxy = {
                 f"{proxy.protocol}": f"http://{proxy.user}:{proxy.password}@{proxy.ip}:{proxy.port}"
             }
-            async with httpx.AsyncClient(proxies=httpx_proxy) as client:
+            async with httpx.AsyncClient(proxies=httpx_proxy) as client:  # type: ignore
                 response = await client.get(self.valid_ip_url)
             if response.status_code == 200:
                 return True

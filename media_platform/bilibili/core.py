@@ -67,7 +67,7 @@ class BilibiliCrawler(AbstractCrawler):
             await self.context_page.goto(self.index_url)
 
             # Create a client to interact with the xiaohongshu website.
-            self.bili_client = await self.create_bilibili_client(httpx_proxy_format)
+            self.bili_client = await self.create_bilibili_client(httpx_proxy_format) # type: ignore
             if not await self.bili_client.pong():
                 login_obj = BilibiliLogin(
                     login_type=self.login_type,

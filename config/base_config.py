@@ -2,7 +2,7 @@
 PLATFORM = "xhs"
 KEYWORDS = "python,golang"
 LOGIN_TYPE = "qrcode"  # qrcode or phone or cookie
-COOKIES = ""
+COOKIES = "bc=1; .AspNetCore.Antiforgery.z7Zm84z88Q4=CfDJ8MJJ4hfglf9Hmu9HR0pg2mIJ9ei1K873wuPLA1Flfj2wPV5VSzlYX3vBdpygxT6cfk3nPM2yR5Q5LA_-OJSh42ySi4H5514QGil2vyXHyraGEJgtECXHxIyW5ws0m5GfXgJVj82OhgRzho4e83W2da8; dnid=CfDJ8MJJ4hfglf9Hmu9HR0pg2mKoUsxurrc_nbjlXu4neIQrxbL6bS04Py1zN0EevBLaFuwsokTlg9mc03n_IrzRZbCABBlsbXsRDANxBkHQDM4_56BQpawhjZnaU1lGPzpMXFCVyk-rBdyWjucAHR00JCRk71TMcHgvKj6kqwZegYIeOziobYexRWFJfoDYV-Ysb2HlkLj4W6vUINXhBcHtc9fnx0UlXsPqIXddFqT1GsJhY8EK59j5vmkZ-mbpFoFBjCC4TP8ajio4gjZW_5q2IRA51i6z8Kmo6BRgBVDyYXfOy6GMLj-wjDjmdhcKA8yPRq7n-ssNzkVSEIJKlhlZzj3sHz2qYN67SftNWEpEj9vhUBkmMTyoRqLNly4bbrrp4aqeBeUn4D2owEZiKO2LLQS0PSl7kVydB7jiF6MqKSIYmgl5TVUvW_vIHu1Z3rbkk7ybQFW4zGDAhh4hdHgfTNdx3ug9GZJIblH027A650Xi40DLKIMr8nyXdDimRV3xpjUkozgHQ9sQieg3v3Pr8iBVJflWw110JEc-4CuNKQkKkUiBkeVlEmRqqzUZjApbZ5nX5gWe1QRZ0Sey7DLK3JgRCLXxmMVfISs79lVRWhhIvDjU961x4RZGykQYsOOrBJfwD4ulVT_JlFbyxOM7fIcyMWm5bC9bISo174CzEStlNB7dfrdRu5Wv-ybCFzjzXI-wSMOmKhaA-p5SkiRtMd7pQIrnjfAPirO59xKVxok4; AWSALB=yFkYOWsu4GZe6gpIW5MW8zuOjeQCjzGtWAJhMj5f7UwwMsmI/SzbWp1YLN26Yywp1kNhxZw6+QcA0oWaBe76IcFEgk3ITrKM1ofSM9FMpcd1DXmukP+EMCMPmonO; AWSALBCORS=yFkYOWsu4GZe6gpIW5MW8zuOjeQCjzGtWAJhMj5f7UwwMsmI/SzbWp1YLN26Yywp1kNhxZw6+QcA0oWaBe76IcFEgk3ITrKM1ofSM9FMpcd1DXmukP+EMCMPmonO"
 SORT_TYPE = "popularity_descending"  # 具体值参见media_platform.xxx.field下的枚举值，展示只支持小红书
 CRAWLER_TYPE = "search" # 爬取类型，search(关键词搜索) | detail(帖子相亲)| creator(创作者主页数据) | video_download (视频下载暂时只支持 bili)
 
@@ -31,7 +31,7 @@ CRAWLER_MAX_NOTES_COUNT = 20
 MAX_CONCURRENCY_NUM = 4
 
 # 是否开启爬评论模式, 默认不开启爬评论
-ENABLE_GET_COMMENTS = False
+ENABLE_GET_COMMENTS = True
 
 # 指定小红书需要爬虫的笔记ID列表
 XHS_SPECIFIED_ID_LIST = [
