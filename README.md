@@ -93,8 +93,17 @@
 - 短信转发 [参考仓库](https://github.com/pppscn/SmsForwarder)
 - 内网穿透工具 [ngrok](https://ngrok.com/docs/)
 
+## 申明
+
+本项目只作为学习用途, 切勿他用.
+有任何问题可以进群交流。
+**二维码会不定期更新，如果过期请先star该repo，过几天再来看下。**
+
+<img src="img/fuye.jpeg" width = "200" />
+
 # Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=jiji262/MediaCrawler-new&type=Date)](https://star-history.com/#jiji262/MediaCrawler-new&Date)
+
 
 
