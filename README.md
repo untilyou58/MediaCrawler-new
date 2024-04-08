@@ -1,5 +1,7 @@
 > **免责声明：**
 
+> 本仓库原始代码源自网络，权责问题请咨询原作者。本仓库仅供备份。
+
 >本仓库的所有内容仅供学习和参考之用，禁止用于商业用途。任何人或组织不得将本仓库的内容用于非法用途或侵犯他人合法权益。本仓库所涉及的爬虫技术仅用于学习和研究，不得用于对其他平台进行大规模爬虫或其他非法行为。对于因使用本仓库内容而引起的任何法律责任，本仓库不承担任何责任。使用本仓库的内容即表示您同意本免责声明的所有条款和条件。
 
 # 仓库描述
@@ -90,4 +92,18 @@
 - xhs客户端 [ReaJason的xhs仓库](https://github.com/ReaJason/xhs)
 - 短信转发 [参考仓库](https://github.com/pppscn/SmsForwarder)
 - 内网穿透工具 [ngrok](https://ngrok.com/docs/)
+
+## 申明
+
+本项目只作为学习用途, 切勿他用.
+有任何问题可以进群交流。
+**二维码会不定期更新，如果过期请先star该repo，过几天再来看下。**
+
+<img src="img/fuye.jpeg" width = "200" />
+
+# Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jiji262/MediaCrawler-new&type=Date)](https://star-history.com/#jiji262/MediaCrawler-new&Date)
+
+
 
